@@ -33,5 +33,6 @@ func main() {
 	})
 
 	http.Handle("/graphql", h)
+	log.Print("serving on http://localhost:8080/graphql")
 	http.ListenAndServe(":8080", nil)
 }
